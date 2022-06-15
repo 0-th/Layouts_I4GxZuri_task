@@ -18,16 +18,20 @@
 body {
     font-size: 15px;
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    align-content: center;
 }
 
 .container {
-    max-width: 1100px;
-    border-radius: 20px;
-    margin: 0 auto 0 auto;
+    max-width: 960px;
+    border-radius: 15px;
+    overflow: clip;
+    margin: auto;
 }
 
-section {
-    padding: 30px;
+.inner-container {
+    padding: 50px;
 }
 
 button {
@@ -39,20 +43,22 @@ button {
     font-size: inherit;
 }
 
-button:hover {
+.text-content button:hover {
     cursor: pointer;
     padding: 1.05em;
     border: 2px solid var(--light-gray-color);
-    background-color: inherit;
+    background-color: transparent;
     color: var(--light-gray-color);
 }
 
 .text-content {
     font-family: 'Lexend Deca', sans-serif;
+    margin: 10px;
 }
 
-.text-content h2 {
+.text-content h1 {
     font-family: 'Big Shoulders Display', cursive;
+    font-size: 3em;
     color: var(--light-gray-color);
     text-transform: uppercase;
     margin: 20px 0;
@@ -82,4 +88,12 @@ button:hover {
 }
 .dark button {
     color: var(--pri-dark-color);
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
 }
