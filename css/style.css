@@ -1,0 +1,19 @@
+:root {
+    --pri-bright-color: hsl(31, 77%, 52%);
+    --pri-cyan-color: hsl(184, 100%, 22%);
+    --pri-dark-color: hsl(179, 100%, 13%);
+
+    --transparent-white-color: hsla(0, 0%, 100%, 0.75);
+    --light-gray-color:  hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 15px;
+}
+
