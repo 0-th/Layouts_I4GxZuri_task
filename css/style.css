@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
 :root {
     --pri-bright-color: hsl(31, 77%, 52%);
     --pri-cyan-color: hsl(184, 100%, 22%);
@@ -15,5 +17,69 @@
 
 body {
     font-size: 15px;
+    line-height: 1.6;
 }
 
+.container {
+    max-width: 1100px;
+    border-radius: 20px;
+    margin: 0 auto 0 auto;
+}
+
+section {
+    padding: 30px;
+}
+
+button {
+    border: none;
+    border-radius: 50px;
+    padding: 1.2em;
+    background-color: var(--light-gray-color);
+    font-family: inherit;
+    font-size: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+    padding: 1.05em;
+    border: 2px solid var(--light-gray-color);
+    background-color: inherit;
+    color: var(--light-gray-color);
+}
+
+.text-content {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.text-content h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--light-gray-color);
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.text-content p {
+    color: var(--transparent-white-color);
+    margin-bottom: 40px;
+}
+
+.orange {
+    background-color: var(--pri-bright-color);
+}
+.orange button{
+    color: var(--pri-bright-color);
+}
+
+.cyan {
+    background-color: var(--pri-cyan-color);
+}
+.cyan button {
+    color: var(--pri-cyan-color);
+}
+
+.dark {
+    background-color: var(--pri-dark-color);
+}
+.dark button {
+    color: var(--pri-dark-color);
+}
