@@ -18,6 +18,9 @@
 body {
     font-size: 15px;
     line-height: 1.6;
+}
+
+.content {
     min-height: 100vh;
     display: flex;
     align-content: center;
@@ -32,6 +35,28 @@ body {
 
 .inner-container {
     padding: 50px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 20px;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
 }
 
 button {
@@ -96,4 +121,5 @@ button {
         justify-content: center;
         align-content: center;
     }
+
 }
