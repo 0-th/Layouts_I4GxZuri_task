@@ -43,10 +43,16 @@ header ul {
 
 header a {
     text-decoration: none;
-    color: inherit;
-    border: 2px solid black;
-    padding: 10px;
+    border-radius: 50px;
+    margin: 10px;
+    background-color: darkslategrey;
+    padding: 12px;
     font-size: 20px;
+    color: lightblue;
+}
+
+header a:hover {
+    padding: 15px;
 }
 
 header {
@@ -122,4 +128,53 @@ button {
         align-content: center;
     }
 
+}
+
+/*Grid styling starts here*/
+
+.page-wrapper {
+    background-color: #1A1C28;
+}
+
+.grid-container {
+    max-width: 900px;
+    margin: 30px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.box {
+    padding: 50px;
+}
+
+.orange-box {
+    background-color: #EB5020;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+}
+
+.yellow-box {
+    background-color: #FFA401;
+    grid-column: 4 / end;
+    grid-row: 1 / span 2;
+}
+
+.green-box {
+    background-color: #05AA42;
+    grid-column: 1 / span 2;
+    grid-row: 3 / end;
+}
+
+.blue {
+    background-color: #01AEFD;
+}
+
+.blue1-box {
+    grid-column: 3 / end;
+}
+
+.blue2-box {
+    grid-column: 3 / end;
 }
