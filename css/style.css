@@ -173,8 +173,10 @@ button {
 
 .blue1-box {
     grid-column: 3 / end;
+    grid-row: 3 / 4;
 }
 
 .blue2-box {
     grid-column: 3 / end;
+    grid-row: 4 / end;
 }
